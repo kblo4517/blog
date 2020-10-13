@@ -28,6 +28,16 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+#make errors easier to see
+gem 'better_errors', '~> 2.8', '>= 2.8.3'
+
+#bulma 
+gem 'bulma-rails', '~> 0.9.0'
+
+#simple forms
+gem 'simple_form', '~> 5.0', '>= 5.0.3'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -36,6 +46,12 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+
+  #guard - command line tool to handle events
+  gem 'guard', '~> 2.16', '>= 2.16.2'
+
+  #auto reloads you browser when 'view' is modified 
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
 
 group :test do
