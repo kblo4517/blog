@@ -54,6 +54,9 @@ group :development do
 
   #make errors easier to see
   gem 'better_errors', '~> 2.8', '>= 2.8.3'
+
+  #retrieve the binding of the callers method
+  gem 'binding_of_caller', '~> 0.8.0'
 end
 
 group :test do
